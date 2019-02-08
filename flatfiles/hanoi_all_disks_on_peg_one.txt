@@ -18,3 +18,31 @@ fact: (pred obj1 obj2)
 rule: ((pred obj1 obj2) (pred obj2 obj3)) -> (pred obj1 obj3)
 
 """
+
+# all disks on peg1
+fact: (on disk5 peg1)
+fact: (on disk4 peg1)
+fact: (on disk3 peg1)
+fact: (on disk2 peg1)
+fact: (on disk1 peg1)
+
+# disks are ontop of each other on peg1
+fact: (ontop disk1 disk2)
+fact: (ontop disk2 disk3)
+fact: (ontop disk3 disk4)
+fact: (ontop disk4 disk5)
+
+# disk1 is the top of peg1
+fact: (top disk1 peg1)
+
+# only disk1 is movable right now
+fact: (movable disk1 peg1 peg2)
+fact: (movable disk1 peg1 peg3)
+
+
+
+
+
+
+
+
